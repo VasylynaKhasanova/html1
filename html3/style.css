@@ -1,0 +1,32 @@
+body {
+    background: #e3e1e1;
+}
+h1 {
+text-align: center;
+}
+p {
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    color: #980909;
+}
+a:hover {
+    color: #ffffff;
+}
+img {
+    display: block;
+    margin: auto;
+}
+.block1 {
+    width: auto;
+    background: #d5d1d1;
+    padding: 5px;
+    margin: 5px;
+}
+.block2 {
+    background: #dcd8d8;
+    margin: 5px;
+    padding: 5px;
+    border-left: solid 3px black;
+}
