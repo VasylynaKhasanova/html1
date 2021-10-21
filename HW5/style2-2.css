@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 20px;
+}
+.container__header {
+    height: 200px;
+    background: grey;
+}
+.w900 {
+    width: 900px;
+}
+.wrap {
+    display: flex;
+    column-gap: 20px;
+}
+.wrap__box {
+    height: 300px;
+    width: 200px;
+    flex-grow: 1;
+    background: darkgray;
+}
+.container__footer {
+    height: 400px;
+    background: cadetblue;
+}

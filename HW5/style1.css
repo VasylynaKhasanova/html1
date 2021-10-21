@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: beige;
+    row-gap: 10px;
+    padding: 10px;
+}
+.container__header {
+    height: 200px;
+    background: aqua;
+}
+.w900 {
+    width: 900px;
+}
+.h300 {
+    height: 300px;
+}
+.br {
+    border-radius: 20px;
+}
+.m0 {
+    margin: 0 auto;
+}
+.container-1 {
+    display: flex;
+    column-gap: 10px;
+}
+.container-1__item-1 {
+    flex-grow: 2;
+    background: cornflowerblue;
+}
+.container-1__item-2 {
+    flex-grow: 1;
+    background: deepskyblue;
+}
+
+

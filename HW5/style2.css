@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: beige;
+    margin: 0 auto;
+}
+.container__header {
+    height: 200px;
+    background: deepskyblue;
+}
+.container__header-1 {
+    background: cornflowerblue;
+}
+.w900 {
+    width: 900px;
+}
+.h100 {
+    height: 100px;
+}
+.container-wrap {
+    display: flex;
+}
+.container-wrap__main-left {
+    flex-grow: 2;
+    background: indigo;
+}
+.container-wrap__main-right {
+    flex-grow: 1;
+    background: blueviolet;
+}
+.h400 {
+    height: 400px;
+}
+.container__footer {
+    background: blue;
+}

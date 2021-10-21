@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 5px;
+}
+.container__header {
+    background: coral;
+}
+.w900 {
+    width: 900px;
+}
+.h100 {
+    height: 100px;
+}
+.rg10 {
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+.wrap {
+    display: flex;
+    column-gap: 10px;
+}
+.wrap__menu {
+    height: 410px;
+    width: 300px;
+    background: darkgoldenrod;
+}
+.wrap-2 {
+    display: flex;
+}
+.wrap-2__post {
+    background: chocolate;
+    height: 200px;
+    width: 500px;
+    flex-grow: 1;
+}
+.container__footer {
+    background: peru;
+}
+
+
