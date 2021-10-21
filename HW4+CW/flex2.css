@@ -1,0 +1,34 @@
+.main {
+    display: flex;
+    background: beige;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.top {
+    width: 700px;
+    height: 100px;
+    background: cornflowerblue;
+}
+.menu {
+    width: 260px;
+    height: 410px;
+    background: blueviolet;
+}
+.post {
+    width: 420px;
+    height: 200px;
+    background: deepskyblue;
+}
+.wrap {
+    display: flex;
+    column-gap: 10px;
+}
+.posts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
