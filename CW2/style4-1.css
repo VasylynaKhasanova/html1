@@ -28,7 +28,7 @@
 .wrap-3__box {
     width: 200px;
     height: 200px;
-    background: cornflowerblue;
+    background: cadetblue;
     flex-grow: 1;
 }
 .wrap-4 {
@@ -62,9 +62,10 @@
     width: 170px;
     height: 160px;
     border-radius: 50%;
-    background: deepskyblue;
+    background: #c5c1c1;
 }
 .footer {
     background: #c0bebe;
     height: 50px;
 }
+
