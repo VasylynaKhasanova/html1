@@ -16,11 +16,13 @@
     .navbar {
         padding-top: 0;
     }
+
     .navbar_media {
         display: flex;
         column-gap: 15px;
         margin-bottom: 8px;
     }
+
     .navbar_media__city {
         width: 110px;
         height: 14px;
@@ -29,9 +31,11 @@
         line-height: 14px;
         color: #FFFFFF;
     }
+
     .underline {
         text-decoration: underline;
     }
+
     .navbar_media__more {
         width: 24px;
         height: 14px;
@@ -40,6 +44,7 @@
         line-height: 14px;
         color: #FFFFFF;
     }
+
     .navbar_media img {
         width: 8px;
         height: 10px;
@@ -332,7 +337,7 @@
 
     .carousel_item {
         width: 250px;
-        height: 126px;
+        height: 130px;
     }
 
     .carousel_paragraph {
@@ -340,6 +345,8 @@
         height: 28px;
         font-size: 10px;
         line-height: 14px;
+        margin-top: 20px;
+        margin-bottom: 11px;
     }
 
     .carousel_item__button {
@@ -609,6 +616,7 @@
     .mt100 {
         margin-top: 80px;
     }
+
     .mb9 {
         margin-bottom: 0;
     }
@@ -701,4 +709,45 @@
         line-height: 14px;
         margin: 0;
     }
+
+    .absolute {
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-left: -15px;
+        top: -17px;
+    }
+
+    .absolute_flex {
+        padding: 12px 30px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        height: 60px;
+        background: #FFFFFF;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .absolute_main {
+        text-align: center;
+    }
+    .absolute_images {
+        width: 24px;
+        height: 24px;
+    }
+    .width28 {
+       width: 28px;
+    }
+
+    .font {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #0F2438;
+    }
+
 }
