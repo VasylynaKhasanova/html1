@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <ul class="navbar-nav">
                 </li>
-                <img src="images/placeholder%201.png" alt="vector">
+                <img class="hidden" src="images/placeholder%201.png" alt="vector">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ваш город: Москва</a>
                 </li>
@@ -67,6 +67,11 @@
                 </li>
                 </li>
             </ul>
+            <div class="navbar_media">
+                <div class="navbar_media__city">Ваш город: <span class="underline">Москва</span></div>
+                <div class="navbar_media__more">Еще</div>
+                <img src="images/arrow.png" alt="arrow">
+            </div>
         </div>
     </nav>
     <div class="header">
@@ -85,14 +90,16 @@
                 <img src="images/placeholder.png" alt="vector">
                 <p class="mp">Невский пр-т, д. 45</p>
             </div>
-            <div class="header_top__message">
-                <div class="header_top__message__green header_top__flex"><img src="images/whatsapp%201.png"
-                                                                              alt="whatsapp">
-                    <p class="mp"> Напишите нам в WhatsApp</p></div>
-            </div>
-            <div class="header_top__phone header_top__flex header_top__flex-column font_style">
-                <h4>+7 383 291 92 86</h4>
-                <p class="mp">форма обратной связи</p>
+            <div class="header_media_wrapper">
+                <div class="header_top__message">
+                    <div class="header_top__message__green header_top__flex"><img src="images/whatsapp%201.png"
+                                                                                  alt="whatsapp">
+                        <p class="mp"> Напишите нам в WhatsApp</p></div>
+                </div>
+                <div class="header_top__phone header_top__flex header_top__flex-column font_style">
+                    <h4>+7 383 291 92 86</h4>
+                    <p class="mp">форма обратной связи</p>
+                </div>
             </div>
         </div>
         <div class="header_bottom">
@@ -108,7 +115,9 @@
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Поиск по наименованию или артикулу"
                            aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Найти</button>
+                    <button class="btn btn-outline-success" type="submit"><span class="text_media">Найти</span>
+                        <span class="images_media"><img src="images/search.png" alt="search"></span>
+                    </button>
                 </form>
             </div>
             <div class="header_bottom__right">
@@ -174,8 +183,9 @@
                     </div>
                     <div class="section_right__top__bottom">
                         <div class="section_right__top__bottom__price">
-                            <p class="price_first">4 430₽</p>
-                            <p class="price_second">5 430₽</p>
+                            <span class="price_media flex"> <p class="price_first">4 430₽</p>
+                                <p class="price_second">5 430₽</p>
+                            </span>
                             <div class="button_cart"><img src="images/shopping%20cart.png" alt="shopping cart"></div>
                         </div>
                     </div>
@@ -207,7 +217,7 @@
                     <p class="carousel_paragraph">Трансмиссионное масло; присалка в масло акпп</p>
                     <div class="carousel_item__button">Перейти</div>
                 </div>
-                <img src="images/avt-zap_main_page_v01%20(1)йцу%201.png" alt="auto parts">
+                <img class="media" src="images/avt-zap_main_page_v01%20(1)йцу%201.png" alt="auto parts">
             </div>
             <div class="carousel_item">
                 <div class="carousel_item__text">
@@ -238,201 +248,271 @@
             </div>
             <div class="content_items">
                 <div class="content_items_top">
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%2012.png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                    <span class="content_media">
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2012.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Intermediate accumelator sleeve</h5>
-                            <div class="reviews_wrapper mt">
-                                <p class="reviews_price">ЦЕНА</p>
-                                <div class="reviews_choose">по запросу</div>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%207%20(1).png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%207%20(1).png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Комплект фрикционных дисков</h5>
-                            <div class="reviews_wrapper mt ai">
-                                <p class="price_first">4 430₽</p>
-                                <p class="price_second">5 430₽</p>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Комплект фрикционных дисков</h5>
+                                <div class="reviews_wrapper mt ai mb9">
+                                    <p class="price_first">4 430₽</p>
+                                    <p class="price_second">5 430₽</p>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%2012.png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                    </span>
+                    <div class="line_media"><p></p></div>
+                    <span class="content_media media_hidden">
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2012.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Intermediate accumelator sleeve</h5>
-                            <div class="reviews_wrapper mt">
-                                <p class="reviews_price">ЦЕНА</p>
-                                <div class="reviews_choose">по запросу</div>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%2013.png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2013.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Intermediate accumelator sleeve</h5>
-                            <div class="reviews_wrapper mt">
-                                <p class="reviews_price">ЦЕНА</p>
-                                <div class="reviews_choose">по запросу</div>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </span>
+                    <span class="content_media media_unhidden">
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2012.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
+                                </div>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
+                                </div>
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%207%20(1).png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
+                                </div>
+                                <h5>Комплект фрикционных дисков</h5>
+                                <div class="reviews_wrapper mt ai">
+                                    <p class="price_first">4 430₽</p>
+                                    <p class="price_second">5 430₽</p>
+                                </div>
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <div class="line_media"><p></p></div>
                 </div>
                 <div class="content_line"></div>
                 <div class="content_items_bottom">
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%2012.png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                    <span class="content_media">
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2012.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Intermediate accumelator sleeve</h5>
-                            <div class="reviews_wrapper mt">
-                                <p class="reviews_price">ЦЕНА</p>
-                                <div class="reviews_choose">по запросу</div>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%207%20(1).png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%207%20(1).png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Комплект фрикционных дисков</h5>
-                            <div class="reviews_wrapper mt ai">
-                                <p class="price_first">4 430₽</p>
-                                <p class="price_second">5 430₽</p>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Комплект фрикционных дисков</h5>
+                                <div class="reviews_wrapper mt ai mb9">
+                                    <p class="price_first">4 430₽</p>
+                                    <p class="price_second">5 430₽</p>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%2012.png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                    </span>
+                    <span class="content_media media_hidden">
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2012.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Intermediate accumelator sleeve</h5>
-                            <div class="reviews_wrapper mt">
-                                <p class="reviews_price">ЦЕНА</p>
-                                <div class="reviews_choose">по запросу</div>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="content_items_top_box">
-                        <img src="images/avt-zap_main_page_v01%20(1)йцу%2013.png" alt="auto parts">
-                        <div class="box_wrapper">
-                            <div class="content_items_top_box__reviews">
-                                <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
-                                    <p class="reviews_mark">4.5</p>
+                        <div class="content_items_top_box">
+                            <img class="item_box" src="images/avt-zap_main_page_v01%20(1)йцу%2013.png"
+                                 alt="auto parts">
+                            <div class="box_wrapper">
+                                <div class="content_items_top_box__reviews">
+                                    <div class="reviews_wrapper"><img src="images/Star.png" alt="star">
+                                        <p class="reviews_mark">4.5</p>
+                                    </div>
+                                    <p class="reviews_opinion">10 отзывов</p>
                                 </div>
-                                <p class="reviews_opinion">10 отзывов</p>
-                            </div>
-                            <h5>Intermediate accumelator sleeve</h5>
-                            <div class="reviews_wrapper mt">
-                                <p class="reviews_price">ЦЕНА</p>
-                                <div class="reviews_choose">по запросу</div>
-                            </div>
-                            <div class="content_items_top_box__button">
-                                <div class="box_button_cart">
-                                    <img src="images/shopping%20cart.png" alt="shopping cart">
-                                    <p class="box_button_text">В корзину</p>
+                                <h5>Intermediate accumelator sleeve</h5>
+                                <div class="reviews_wrapper mt">
+                                    <p class="reviews_price">ЦЕНА</p>
+                                    <div class="reviews_choose">по запросу</div>
                                 </div>
-                                <img class="icon" src="images/like.png" alt="like">
-                                <img class="icon" src="images/histogram.png" alt="histogram">
+                                <div class="content_items_top_box__button">
+                                    <div class="box_button_cart">
+                                        <img src="images/shopping%20cart.png" alt="shopping cart">
+                                        <p class="box_button_text">В корзину</p>
+                                    </div>
+                                    <img class="icon" src="images/like.png" alt="like">
+                                    <img class="icon histogram" src="images/histogram.png" alt="histogram">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </span>
                 </div>
             </div>
             <div class="content_down_button">
@@ -443,23 +523,20 @@
                 <div class="content_news_box">
                     <div>
                         <img class="content_news_point" src="images/Group%2043.png" alt="point">
-                        <div class="content_news_data_box">3 ноября</div>
                     </div>
                     <div>
                         <img class="content_news_point" src="images/Group%2043.png" alt="point">
-                        <div class="content_news_data_box">3 ноября</div>
                     </div>
                     <div>
                         <img class="content_news_point" src="images/Group%2043.png" alt="point">
-                        <div class="content_news_data_box">3 ноября</div>
                     </div>
                     <div>
                         <img class="content_news_point" src="images/Group%2043.png" alt="point">
-                        <div class="content_news_data_box">3 ноября</div>
                     </div>
                 </div>
                 <div class="content_news_text">
                     <div class="content_news_text_box">
+                        <div class="content_news_data_box mt6">3 ноября</div>
                         <p class="text_box_top">Изменения на сайте</p>
                         <p class="text_box_bottom">Недавно на сайте мы ввели очередную порцию изменений, которые, как
                             нам
@@ -468,6 +545,7 @@
                             заставила себя долго ждать...</p>
                     </div>
                     <div class="content_news_text_box">
+                        <div class="content_news_data_box">2 ноября</div>
                         <p class="text_box_top">Вышла новая версия для мобильных приложений</p>
                         <p class="text_box_bottom paragraph">Что нового в 2.0:
                         <p class="paragraph">— добавлена история поиска;</p>
@@ -476,6 +554,7 @@
                         </p>
                     </div>
                     <div class="content_news_text_box">
+                        <div class="content_news_data_box">1 ноября</div>
                         <p class="text_box_top">Очередная порция обновлений для мобильных приложений</p>
                         <p class="text_box_bottom paragraph">Что нового добавлено:
                         <p class="paragraph">— поддержка пуш-уведомлений;</p>
@@ -486,6 +565,7 @@
                         </p>
                     </div>
                     <div class="content_news_text_box">
+                        <div class="content_news_data_box mt6">31 октября</div>
                         <p class="text_box_top">Интерфейс заказов для покупателей стал более функциональным</p>
                         <p class="text_box_bottom">Он позволяет выводить все формируемые системой уведомления(e-mail,
                             смс,
@@ -501,7 +581,7 @@
             <div class="footer_left">
                 <div class="footer_left_box">
                     <div class="footer_left_box__wrap">
-                        <p class="footer_left_box__title">КАТАЛОГ</p>
+                        <p class="footer_left_box__title pt25">КАТАЛОГ</p>
                         <ul class="footer_left_box__list">
                             <li class="footer_left_box__list">Каталог запчастей</li>
                             <li class="footer_left_box__list">Масла</li>
@@ -515,7 +595,7 @@
                     </div>
                 </div>
                 <div class="footer_left_box__wrap">
-                    <p class="footer_left_box__title">РУБРИКАТОР</p>
+                    <p class="footer_left_box__title mt60">РУБРИКАТОР</p>
                     <ul class="footer_left_box__list">
                         <li class="footer_left_box__list">Доставка</li>
                         <li class="footer_left_box__list">Оплата</li>
@@ -527,7 +607,7 @@
                     </ul>
                 </div>
                 <div class="footer_left_box__wrap">
-                    <p class="footer_left_box__title">ИНФОРМАЦИЯ</p>
+                    <p class="footer_left_box__title mt60">ИНФОРМАЦИЯ</p>
                     <ul class="footer_left_box__list">
                         <li class="footer_left_box__list">Пользовательское соглашение об использовании персональных
                             данных
@@ -535,34 +615,43 @@
                         <li class="footer_left_box__list">Политика конфиденциальности</li>
                         <li class="footer_left_box__list">Соглашение на рассылку рекламных материалов</li>
                         <li class="footer_left_box__list">Политика возвратов</li>
-                        <li class="footer_left_box__list mt45">Мы принимаем</li>
+                        <li class="footer_left_box__list mt45 mt30">Мы принимаем</li>
                     </ul>
                     <img src="images/visa.png" alt="bank card">
                 </div>
             </div>
             <div class="footer_right">
-                <div class="footer_right_text">
-                    <div class="footer_right_box">
-                        <div class="footer_left_box__contacts">
-                            <p class="footer_left_box__title">КОНТАКТЫ</p>
-                            <ul class="footer_left_box__list">
-                                <li class="footer_left_box__list mb0">+7 383 291 92 86</li>
-                                <li class="footer_left_box__list">info@avt-zap.ru</li>
-                                <li class="footer_right_box__list mt23">Мы онлайн, воспользуйтесь</li>
-                                <li class="footer_right_box__list mt23">Подпишитесь на нашу расслыку и вы первыми
-                                    узнаете о
-                                    скидках и
-                                    акциях
-                                </li>
-                            </ul>
-                        </div>
+                <div class="footer_right_text mt100">
+                    <div class="footer_right_wrapper">
+                        <div class="footer_right_box">
+                            <div class="footer_left_box__contacts">
+                                <p class="footer_left_box__title ">КОНТАКТЫ</p>
+                                <ul class="footer_left_box__list">
+                                    <li class="footer_left_box__list mb0">+7 383 291 92 86</li>
+                                    <li class="footer_left_box__list">info@avt-zap.ru</li>
+                                </ul>
+                            </div>
+
+                            <div class="footer_left_box__title">
+                                <p class="footer_left_box__title">АДРЕС</p>
+                                <ul class="footer_left_box__list">
+                                    <li class="footer_left_box__list mb0">г. Новосибирск,</li>
+                                    <li class="footer_left_box__list">г. Новосибирск, ул. Планировочная, 5, офис 105
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+
                         <div class="footer_left_box__address">
-                            <p class="footer_left_box__title">АДРЕС</p>
-                            <ul class="footer_left_box__list">
-                                <li class="footer_left_box__list mb0">г. Новосибирск,</li>
-                                <li class="footer_left_box__list">г. Новосибирск, ул. Планировочная, 5, офис 105</li>
-                                <li class="footer_left_box__form mt23">Форма обратной связи</li>
-                            </ul>
+                            <div class="footer_left_box__list">
+                                <div class="footer_left_box__flex">
+                                    <p class="footer_right_box__list mt23 text">Мы онлайн, воспользуйтесь</p>
+                                    <p class="footer_left_box__form mt23 text_second">Форма обратной связи</p>
+                                </div>
+                                <p class="footer_right_box__list mt23 text mt25">Подпишитесь на нашу расслыку и вы первыми
+                                    узнаете о скидках и акциях
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
